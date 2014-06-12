@@ -5,7 +5,7 @@
 # 6/9/2014 - for git commit
 # 2/9/2003 - works
 
-cd /mnttmp
+cd /tmp
 filelist=$(ls *.tar.gz)
 date>verify.filelist
 for file in $filelist ; do

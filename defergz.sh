@@ -5,7 +5,7 @@
 # 6/9/2014 - for git commit
 # 2/9/2003 - works
 
-cd /mnttmp
+cd /tmp
 while [ 1=1 ] ; do
   tarfiles=$(ls *.tar)
   if [ ! -z "$tarfiles" ] ; then

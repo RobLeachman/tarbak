@@ -8,7 +8,7 @@
 # Check usage...
 #  tarbak.sh
 #     destination 
-#        (defaults to /mnttmp)  - where the backup is stored
+#        (defaults to /tmp)  - where the backup is stored
 #     compression opiton
 #        compress - create compressed tarball
 #        defer - create compressed tarball, in separate process
@@ -26,7 +26,7 @@
 #
 # calls tarbak_fileset.sh to actually do the backup...
 
-USAGE="$0 [dest|null (default /mnttmp)] [compress|defer|null (default nocompress)]"
+USAGE="$0 [dest|null (default /tmp)] [compress|defer|null (default nocompress)]"
 if [ "$1x" = "-hx" ] ; then
   echo $USAGE
   exit 0
@@ -35,7 +35,7 @@ fi
 OPT_DEST=$1
 OPT_CMP=$2
 
-DEST="/mnttmp"
+DEST="/tmp"
 if [ ! -z $OPT_DEST ] ; then
   DEST=$OPT_DEST
 fi
