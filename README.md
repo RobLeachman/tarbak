@@ -3,6 +3,7 @@ A simple set of scripts to facilitate mothballing a system,
 or producing a pinpoint set of tarballs for backup/archive.
 
 ## Usage
+```
 tarbak.sh
   destination 
     (defaults to /tmp)  - where the backup is stored
@@ -10,6 +11,7 @@ tarbak.sh
     compress - create compressed tarball
     defer - create compressed tarball, in separate process
     null - nocompress, just create tarball
+```
 
 Creates a tarball for each root subdirectory, except /dev, /mnt, /proc, /tmp,
 /lost+found, and also any subdirectories that contain a file '.tarbak_skip'
